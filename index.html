@@ -6,31 +6,34 @@
 -->
 <html>
 	<head>
-		<title>Big Picture by HTML5 UP</title>
+		<title>Crêrerie du Vidame à Tiffauges</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
 
+
 		<!-- Header -->
 			<header id="header">
 
-				<!-- Logo -->
-					<img src="images/logo.jpg"/>
+				<!-- Logo  -->
+					<img src="images/logo.png"/>
 					
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro">Intro</a></li>
-							<li><a href="#one">What I Do</a></li>
-							<li><a href="#two">Who I Am</a></li>
-							<li><a href="#work">My Work</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<!-- <li><a href="#intro">Intro</a></li> -->
+							<li><a href="#one">Pizzeria</a></li>
+							<li><a href="#two">Crêperie</a></li>
+							<li><a href="#work">Horaires</a></li>
+							<li><a href="#contact">Plan</a></li>
 						</ul>
 					</nav>
 
@@ -42,8 +45,9 @@
 					<header>
 						<h2>Pizzeria & Creperie du Vidame</h2>
 					</header>
-					<img src="images/bordure.png"/>
-					<p>Les <strong>pizzas</strong> sont réalisées avec des <strong>produits frais</strong> et cuites au <strong>feu de bois</strong>.</p>
+					
+					<p>Pizzas, galettes et crêpes à déguster <strong>sur place</strong> ou <strong>à emporter</strong>.</p>
+					<p>Dans une ambiance médiévale.</p>
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
 					</footer>
@@ -54,11 +58,10 @@
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>What I Do</h2>
+						<h2>Pizza au feu de bois</h2>
 					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<p>Les pizzas sont réalisées avec des <strong>produits frais</strong> et cuites dans un <strong>four au feu de bois</strong>.</p>
+
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -67,11 +70,10 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>Who I Am</h2>
+						<h2>Crêpes et Galettes</h2>
 					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<p>Vous sont proposés aussi un choix de <strong>galettes de sarrasin</strong> et de <strong>crêpes</strong>.
+Nous avons sélectionné pour vous une glace <strong>artisanale</strong> élaborée par un « maître artisan glacier ».</p>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
@@ -80,13 +82,18 @@
 			<section id="work" class="main style3 primary">
 				<div class="content container">
 					<header>
-						<h2>My Work</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+						<h2>Horaires</h2>
 					</header>
-
-					<!-- Lightbox Gallery  -->
+					<table>
+						<tr><td> Lundi </td><td>&nbsp; 12h00-13h30 &nbsp;</td>&nbsp;</tr>
+						<tr><td> Mercredi </td><td>&nbsp; 12h00-13h30&nbsp;&nbsp;19h00-21h30 &nbsp;</td>&nbsp;</tr>
+						<tr><td> Jeudi </td><td>&nbsp; 12h00-13h30&nbsp;&nbsp;19h00-21h30 &nbsp;</td>&nbsp;</tr>
+						<tr><td> Vendredi </td><td>&nbsp; 12h00-13h30&nbsp;&nbsp;19h00-22h00 &nbsp;</td>&nbsp;</tr>
+						<tr><td> Samedi </td><td>&nbsp; 19h00-23h00 &nbsp;</td>&nbsp;</tr>
+						<tr><td> Dimanche </td><td>&nbsp; 19h00-22h00 &nbsp;</td></tr>
+					</table>
+<!--
+					&lt;!&ndash; Lightbox Gallery  &ndash;&gt;
 						<div class="container 75% gallery">
 							<div class="row 0% images">
 								<div class="6u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a></div>
@@ -101,39 +108,51 @@
 								<div class="6u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit from-right"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a></div>
 							</div>
 						</div>
+-->
 
 				</div>
 			</section>
 
-		<!-- Contact -->
+
+
+
+
+		<!-- map -->
 			<section id="contact" class="main style3 secondary">
 				<div class="content container">
 					<header>
-						<h2>Nous écrire.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+						<h2>C'est où?</h2>
 					</header>
-					<div class="box container 75%">
-
-					<!-- Contact Form -->
-							<form method="post" action="#">
-								<div class="row 50%">
-									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row 50%">
-									<div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-
-					</div>
 				</div>
+				<div id="mapid" style="height: 400px;"></div>
+				<script>
+					var mymap = L.map('mapid').setView([47.01458, -1.11386], 17);
+
+					L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYW91dnJhcmQiLCJhIjoiY2l3MHQ0ZWluMDc1dzJvbzFwMmN3bGV1NSJ9.Gf5u5w4sTt38PYossLyJ6w', {
+						maxZoom: 22,
+						id: 'mapbox.streets'
+					}).addTo(mymap);
+
+					var marker = L.marker([47.01375, -1.11380]).addTo(mymap);
+
+
+					//creation du marqueur
+					var iconechateau = L.Icon.extend({
+					//image de l'icone personalisée
+					iconUrl: 'icon-castle.png',
+					//taille de l'icone
+					iconSize: new L.Point(32, 37),
+					//point de la fleche de l'icone
+					iconAnchor: new L.Point(16, 37)
+
+							});
+					var iconechateaurouge = new iconechateau();
+					//positionement de l'icone
+					var marker1 = new L.Marker(new L.LatLng(48.560058073,-3.1502330 ), {icon: iconechateaurouge});
+					//affichage
+					map.addLayer(marker1);
+
+				</script>
 			</section>
 
 		<!-- Footer -->
@@ -151,12 +170,13 @@
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Basé sur : <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</footer>
 
 		<!-- Scripts -->
+			<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -164,6 +184,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 			<script src="assets/js/main.js"></script>
 
 	</body>
