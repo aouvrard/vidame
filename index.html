@@ -6,156 +6,83 @@
 -->
 <html>
 	<head>
-		<title>Crêrerie du Vidame à Tiffauges</title>
+		<title>Crêperie du Vidame à Tiffauges</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-		<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body>
-
-
-		<!-- Header -->
-			<header id="header">
-
-				<!-- Logo  -->
-					<img src="images/logo.png"/>
-					
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<!-- <li><a href="#intro">Intro</a></li> -->
-							<li><a href="#one">Pizzeria</a></li>
-							<li><a href="#two">Crêperie</a></li>
-							<li><a href="#work">Horaires</a></li>
-							<li><a href="#contact">Plan</a></li>
-						</ul>
-					</nav>
-
-			</header>
-
-
-		<div itemscope itemtype="http://schema.org/Restaurant">
-			<span itemprop="name">GreatFood</span>
-			<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-				<span itemprop="ratingValue">4</span> stars -
-				based on <span itemprop="reviewCount">250</span> reviews
-			</div>
-			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				<span itemprop="streetAddress">1901 Lemur Ave</span>
-				<span itemprop="addressLocality">Sunnyvale</span>,
-				<span itemprop="addressRegion">CA</span> <span itemprop="postalCode">94086</span>
-			</div>
-			<span itemprop="telephone">(408) 714-1489</span>
-			<a itemprop="url" href="http://www.dishdash.com">www.greatfood.com</a>
-			Hours:
-			<meta itemprop="openingHours" content="Mo-Sa 11:00-14:30">Mon-Sat 11am - 2:30pm
-			<meta itemprop="openingHours" content="Mo-Th 17:00-21:30">Mon-Thu 5pm - 9:30pm
-			<meta itemprop="openingHours" content="Fr-Sa 17:00-22:00">Fri-Sat 5pm - 10:00pm
-			Categories:
-			<span itemprop="servesCuisine">
-        Middle Eastern
-      </span>,
-			<span itemprop="servesCuisine">
-        Mediterranean
-      </span>
-			Price Range: <span itemprop="priceRange">$$</span>
-			Takes Reservations: Yes
-		</div>
-
 
 		<!-- Intro -->
-			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content container 75%">
-					<header>
-						<h2>Pizzeria & Creperie du Vidame</h2>
-					</header>
-					
-					<p>Pizzas, galettes et crêpes à déguster <strong>sur place</strong> ou <strong>à emporter</strong>.</p>
-					<p>Dans une ambiance médiévale.</p>
-					<footer>
-						<a href="#one" class="button style2 down">More</a>
-					</footer>
-				</div>
-			</section>
+		<section id="intro" class="main style1 dark fullscreen">
+			<div class="content container 75%">
+				<header>
+					<h2>Pizzeria & Creperie du Vidame</h2>
+				</header>
+
+				<p>Pizzas, galettes et crêpes à déguster <strong>sur place</strong> ou <strong>à emporter</strong>.</p>
+				<p>Dans une ambiance médiévale.</p>
+				<footer>
+					<a href="#one" class="button style2 down">More</a>
+				</footer>
+			</div>
+		</section>
 
 		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>Pizza au feu de bois</h2>
-					</header>
-					<p>Les pizzas sont réalisées avec des <strong>produits frais</strong> et cuites dans un <strong>four au feu de bois</strong>.</p>
+		<section id="one" class="main style2 right dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>Pizza au feu de bois</h2>
+				</header>
+				<p>Les pizzas sont réalisées avec des <strong>produits frais</strong> et cuites dans un <strong>four au feu de bois</strong>.</p>
 
-				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
-			</section>
+			</div>
+			<a href="#two" class="button style2 down anchored">Next</a>
+		</section>
 
 		<!-- Two -->
-			<section id="two" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>Crêpes et Galettes</h2>
-					</header>
-					<p>Vous sont proposés aussi un choix de <strong>galettes de sarrasin</strong> et de <strong>crêpes</strong>.
-Nous avons sélectionné pour vous une glace <strong>artisanale</strong> élaborée par un « maître artisan glacier ».</p>
-				</div>
-				<a href="#work" class="button style2 down anchored">Next</a>
-			</section>
+		<section id="two" class="main style2 left dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>Crêpes et Galettes</h2>
+				</header>
+				<p>Vous sont proposés aussi un choix de <strong>galettes de sarrasin</strong> et de <strong>crêpes</strong>.
+					Nous avons sélectionné pour vous une glace <strong>artisanale</strong> élaborée par un « maître artisan glacier ».</p>
+			</div>
+			<a href="#work" class="button style2 down anchored">Next</a>
+		</section>
 
 		<!-- Work -->
-			<section id="work" class="main style3 primary">
-				<div class="content container">
-					<header>
-						<h2>Horaires</h2>
-					</header>
-					<table>
-						<tr><td> Lundi </td><td>&nbsp; 12h00-13h30 &nbsp;</td>&nbsp;</tr>
-						<tr><td> Mercredi </td><td>&nbsp; 12h00-13h30&nbsp;&nbsp;19h00-21h30 &nbsp;</td>&nbsp;</tr>
-						<tr><td> Jeudi </td><td>&nbsp; 12h00-13h30&nbsp;&nbsp;19h00-21h30 &nbsp;</td>&nbsp;</tr>
-						<tr><td> Vendredi </td><td>&nbsp; 12h00-13h30&nbsp;&nbsp;19h00-22h00 &nbsp;</td>&nbsp;</tr>
-						<tr><td> Samedi </td><td>&nbsp; 19h00-23h00 &nbsp;</td>&nbsp;</tr>
-						<tr><td> Dimanche </td><td>&nbsp; 19h00-22h00 &nbsp;</td></tr>
-					</table>
-<!--
-					&lt;!&ndash; Lightbox Gallery  &ndash;&gt;
-						<div class="container 75% gallery">
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a></div>
-							</div>
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a></div>
-							</div>
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit from-left"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit from-right"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a></div>
-							</div>
-						</div>
--->
-
-				</div>
-			</section>
-
-
-
+		<section id="work" class="main style3 primary">
+			<div class="content container">
+				<header>
+					<h2>Horaires</h2>
+				</header>
+				<table>
+					<tr><td> Lundi </td><td>&nbsp; 12h00-13h30 &nbsp;</td><td>&nbsp;</td></tr>
+					<tr><td> Mercredi </td><td>&nbsp; 12h00-13h30&nbsp;</td><td>19h00-21h30 &nbsp;</td>&nbsp;</tr>
+					<tr><td> Jeudi </td><td>&nbsp; 12h00-13h30&nbsp;</td><td>19h00-21h30 &nbsp;</td>&nbsp;</tr>
+					<tr><td> Vendredi </td><td>&nbsp; 12h00-13h30&nbsp;</td><td>19h00-22h00 &nbsp;</td>&nbsp;</tr>
+					<tr><td> Samedi </td><td>&nbsp;</td><td> 19h00-23h00 &nbsp;</td>&nbsp;</tr>
+					<tr><td> Dimanche </td><td>&nbsp;</td><td> 19h00-22h00 &nbsp;</td></tr>
+				</table>
+			</div>
+		</section>
 
 
 		<!-- map -->
-			<section id="contact" class="main style3 secondary">
-				<div class="content container">
-					<header>
-						<h2>C'est où?</h2>
-					</header>
-				</div>
-				<div id="mapid" style="height: 400px;"></div>
-				<script>
+		<section id="contact" class="main style3 secondary">
+			<div class="content container">
+				<header>
+					<h2>C'est où?</h2>
+				</header>
+			</div>
+			<div id="mapid" style="height: 400px;"></div>
+			<script>
 					var mymap = L.map('mapid').setView([47.01458, -1.11386], 17);
 
 					L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYW91dnJhcmQiLCJhIjoiY2l3MHQ0ZWluMDc1dzJvbzFwMmN3bGV1NSJ9.Gf5u5w4sTt38PYossLyJ6w', {
@@ -163,59 +90,82 @@ Nous avons sélectionné pour vous une glace <strong>artisanale</strong> élabor
 						id: 'mapbox.streets'
 					}).addTo(mymap);
 
-					var marker = L.marker([47.01380, -1.11380]).addTo(mymap);
+					var logoIcon = L.icon({
+						 iconUrl: './images/logo.png',
+						 iconSize:     [50, 60],
+						 iconAnchor:   [25, 55],
+						 shadowAnchor: [4, 62],
+						 popupAnchor:  [0, 0]
+					});
 
+					L.marker([47.01380,-1.11380], {icon: logoIcon}).addTo(mymap).bindPopup("Crêperie du Vidame");
 
-					//creation du marqueur
-					var iconechateau = L.Icon.extend({
-					//image de l'icone personalisée
-					iconUrl: 'icon-castle.png',
-					//taille de l'icone
-					iconSize: new L.Point(32, 37),
-					//point de la fleche de l'icone
-					iconAnchor: new L.Point(16, 37)
+					var castleIcon = L.icon({
+						 iconUrl: './images/castleIcon.png',
+						 iconSize:     [50, 50],
+						 iconAnchor:   [25, 0],
+						 shadowAnchor: [4, 62],
+						 popupAnchor:  [0, 0]
+					});
 
-							});
-					var iconechateaurouge = new iconechateau();
-					//positionement de l'icone
-					var marker1 = new L.Marker(new L.LatLng(48.560058073,-3.1502330 ), {icon: iconechateaurouge});
-					//affichage
-					map.addLayer(marker1);
+					L.marker([47.01530,-1.1150], {icon: castleIcon}).addTo(mymap).bindPopup("Château de Tiffauges").openPopup();
 
 				</script>
-			</section>
+		</section>
 
 		<!-- Footer -->
-			<footer id="footer">
+		<footer id="footer">
 
-				<!-- Icons -->
-					<ul class="actions">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					</ul>
+			<!-- Icons -->
+			<ul class="actions">
+				<li><a href="https://www.facebook.com/creperie.duvidame" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			</ul>
 
-				<!-- Menu -->
-					<ul class="menu">
-						<li>Basé sur : <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+			<ul>
+				<li>
+					<div align="center">
+						<span>23 Grande Rue</span>
+						<span>85130 Tiffauges</span>
+						<span itemprop="telephone">&#9742; 02 51 65 76 40</span>
+					</div>
+				</li>
+			</ul>
 
-			</footer>
+			<!-- Menu -->
+			<ul class="menu">
+				<li>Basé sur : <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+
+		</footer>
 
 		<!-- Scripts -->
-			<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		<!--</div>-->
+		<body>
+		</body>
 
-	</body>
+
+		<!-- Header -->
+	<header id="header">
+
+				<!-- Logo  -->
+	<img src="images/logo.png"/>
+	<!-- Nav -->
+	<nav id="nav">
+		<ul>
+			<!-- <li><a href="#intro">Intro</a></li> -->
+			<li><a href="#one">Pizzeria</a></li>
+			<li><a href="#two">Crêperie</a></li>
+			<li><a href="#work">Horaires</a></li>
+			<li><a href="#contact">Plan</a></li>
+		</ul>
+	</nav>
+	</header>
 </html>
